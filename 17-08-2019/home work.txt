@@ -1,0 +1,31 @@
+home work
+
+1. class code (write it on paper)
+2. string function
+	substr
+	implode
+	explode
+	filter_var
+
+	strstr
+	strpos
+	strrpos
+	*****htmlentities — Convert all applicable characters to HTML entities
+	***htmlspecialchars_decode — Convert special HTML entities back to characters
+	*********htmlspecialchars — Convert special characters to HTML entities
+	trim
+	****************MD5
+	str_replace
+	strlen
+	strtoupper -> upper case
+	strtolower -> lower case 
+	ucwords = my name is mubashir -> My Name Is Mubashir
+	ucfirst -> My name is mubashir
+
+    https://www.php.net/manual/en/ref.strings.php
+
+
+
+     
+
+
