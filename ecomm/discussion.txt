@@ -1,0 +1,136 @@
+
+
+Primary Key -> It can not be zero
+Foreign Key
+
+composite PK
+100-CE-2018 -> composite pk
+
+
+Unique Key -> NIC -> it can be zero
+Candidate Key -> Driving lic no, NIC, Passport no
+
+
+
+
+int   			10,20,30
+bigint
+tinyint
+smallint
+longint
+
+
+float				
+double
+decimal
+small/tiny/long
+
+
+
+char   (length 50)					alphanumeric / string / 
+varchar (50)
+
+char -> Ali -> 3 -> 50 bytes
+varchar -> Ali -> 3 -> 3 bytes
+text -> Ali -> 3 -> 3 bytes
+long/small/tinytext
+
+
+blog    /image/audio/video/file
+tiny/small/long/big blob
+
+
+bool true/false
+bit 0/1
+
+
+datetime
+date
+time
+year
+
+
+enum custom datatype
+
+gender (m/f)
+status (in progress / testing / completed)
+
+
+
+MyISAM VS InnoDB -> Home work
+
+
+
+MVC Pattern
+Model  View 				Controller
+DB     HTML/CSS/js 		Business logic
+
+W.r.T Laravel
+Model -> DB -> ORM (object relation model)
+view -> HTML/CSS/JS (Template engine -> Blade)
+controller -> Business login -> PHP
+
+Rapid Application development 
+easy Code maintaince 
+Bug fixing -> easy / fast
+code reuseable 
+
+
+
+Laravel 
+	lumen
+Symfony
+Yii Framework
+CakePHP
+Codeigniter
+FuelPHP
+Falcon
+Kohana
+Zend framework
+slim
+
+
+
+
+
+
+responsive web design
+bootstrap
+jquery
+js
+coffee
+typescript
+
+less, sass
+
+
+vue.js
+react
+angular
+
+
+
+
+
+c:/wamp/www
+
+c:
+cd wamp/www
+
+
+composer 
+
+
+chmod 777 ecomm/storage -R
+
+1. composer
+2. laravel
+3. storage directory write permission
+4. key generation: php artisan key:generate
+
+
+
+
+1. ecomm -> template -> implementation 
+2. laravel -> training -> implementation
+

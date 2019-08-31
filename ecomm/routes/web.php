@@ -14,3 +14,18 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get("hello", function(){
+	return view("hello");
+});
+
+Route::get("test","home@index");
+Route::get("hitview","home@hello");
+
+
+
+
+// Route::get("test", function(){
+// 	return "HELLO Testing WORLD";
+// });
