@@ -22,6 +22,7 @@ Route::get("hello", function(){
 
 Route::get("test","home@index");
 Route::get("hitview","home@hello");
+Route::get("list","home@list");
 
 
 
