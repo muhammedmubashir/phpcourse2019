@@ -25,7 +25,10 @@ Route::get("hitview","home@hello");
 Route::get("list","home@list");
 
 
+Route::get("category","products@categories");
+Route::get("products","products@list");
 
+Route::get("product/details/{id}","products@details");
 
 // Route::get("test", function(){
 // 	return "HELLO Testing WORLD";

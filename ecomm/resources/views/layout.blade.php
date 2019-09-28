@@ -10,9 +10,9 @@
         	<h1>Almari Online Store</h1>
         </div>
 
-        @section('navbar')
-            This is the master navbar.
-        @show
+        <div>
+            @include("_navbar")
+        </div>
 
 
         <div class="container">

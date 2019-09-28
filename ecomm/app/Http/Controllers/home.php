@@ -18,6 +18,7 @@ class home extends Controller
 
     function list()
     {
+    	$data['categories'] = ["Laptop","Mobile","Camera"];
     	$data['heading'] = "Product Listing Page";
     	$data['productList'] = array("iPhone 11", "iPhone 10", "iPhone 9");
     	return view("product/list",$data);
