@@ -33,3 +33,6 @@ Route::get("product/details/{id}","products@details");
 // Route::get("test", function(){
 // 	return "HELLO Testing WORLD";
 // });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

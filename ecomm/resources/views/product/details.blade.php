@@ -17,7 +17,7 @@
 			</p>
 			@foreach($productImages as $image)
 			
-			<img src="{{ URL ('$image->image_path/$image->image_name') }}">
+			<img src="{{ URL ($image->image_path) }}/{{ $image->image_name}}">
 			@endforeach
 		</div>
 	</div>
