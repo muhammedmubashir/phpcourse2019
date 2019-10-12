@@ -8,6 +8,8 @@ class productModel extends Model
 {
     protected $table = "products";
     protected $primaryKey = "product_id";
+    protected $fillable = ['name','sku','description','regular_price','product_status_id'];
+    public $timestamps = false;
 
     public function images()
     {

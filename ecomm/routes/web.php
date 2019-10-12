@@ -36,3 +36,10 @@ Route::get("product/details/{id}","products@details");
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+Route::get("/admin/products","adminProducts@index");
+Route::get("/admin/products/create","adminProducts@create");
+Route::post("/admin/products/store","adminProducts@store");
+
