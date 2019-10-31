@@ -39,7 +39,24 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 
+// //listing 
 Route::get("/admin/products","adminProducts@index");
+
+// //create
 Route::get("/admin/products/create","adminProducts@create");
 Route::post("/admin/products/store","adminProducts@store");
 
+//update
+// Route::get("URI",Controller@action);
+// Route::post("URI",Controller@action);
+
+// //view record
+// Route::post("URI",Controller@action);
+
+// //delete record
+// Route::post("URI",Controller@action);
+
+
+//CRUD 
+
+// Route::resource("/admin/products","adminProducts");

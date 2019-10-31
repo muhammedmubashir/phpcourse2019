@@ -4,6 +4,15 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
+            @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+            @endif
             <div class="panel panel-default">
                 <div class="panel-heading">Create Product</div>
 
@@ -15,7 +24,7 @@
                             <label for="name" class="col-md-4 control-label">Name</label>
 
                             <div class="col-md-6">
-                                <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required autofocus>
+                                <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}">
 
                                 @if ($errors->has('name'))
                                     <span class="help-block">
@@ -29,7 +38,7 @@
                             <label for="sku" class="col-md-4 control-label">SKU</label>
 
                             <div class="col-md-6">
-                                <input id="sku" type="text" class="form-control" name="sku" value="{{ old('sku') }}" required autofocus>
+                                <input id="sku" type="text" class="form-control" name="sku" value="{{ old('sku') }}">
 
                                 @if ($errors->has('sku'))
                                     <span class="help-block">
@@ -43,7 +52,7 @@
                             <label for="description" class="col-md-4 control-label">Description</label>
 
                             <div class="col-md-6">
-                                <input id="description" type="text" class="form-control" name="description" value="{{ old('description') }}" required autofocus>
+                                <input id="description" type="text" class="form-control" name="description" value="{{ old('description') }}">
 
                                 @if ($errors->has('description'))
                                     <span class="help-block">
@@ -57,7 +66,7 @@
                             <label for="price" class="col-md-4 control-label">Price</label>
 
                             <div class="col-md-6">
-                                <input id="price" type="text" class="form-control" name="price" value="{{ old('price') }}" required autofocus>
+                                <input id="price" type="text" class="form-control" name="price" value="{{ old('price') }}">
 
                                 @if ($errors->has('price'))
                                     <span class="help-block">
