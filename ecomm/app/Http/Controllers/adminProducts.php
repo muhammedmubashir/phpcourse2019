@@ -19,36 +19,19 @@ class adminProducts extends Controller
 
     }
 
-    // function show()
-    // {
-
-    // }
-
     function create()
     {
     	//create form for products
         return view("admin/products/create");
     }
 
-    // public function messages()
-    // {
-    //     return [
-    //         'name.required' => 'A title is required',
-    //         'body.required'  => 'A message is required',
-    //     ];
-    // }
-
-
-
     function store(Request $request)
     {
-        $validatedData = $request->validate([
-        'name' => 'required|max:255|email',
-        'sku' => 'required',
+    	$postedData = $request->validate([
+        'name' => 'required|unique:posts|max:255',
         'price' => 'required',
         ]);
-
-        $postedData = $request->all();
+        // $postedData = $r->all();
         // echo $r->get("name");
         
         $prodct = new productModel;
@@ -68,17 +51,17 @@ class adminProducts extends Controller
         
     }
 
-    // function edit()
-    // {
-    // 	//show form with existing values
-    // }
+    function edit()
+    {
+    	//show form with existing values
+    }
 
-    // function update()
-    // {
-    // 	//update with new values
-    // }
+    function update()
+    {
+    	//update with new values
+    }
 
-    function destroy()
+    function delete()
     {
     	//delete the record
     }
